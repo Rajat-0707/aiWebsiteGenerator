@@ -22,5 +22,7 @@
       "src": "/(.*)",
       "dest": "aiwebsitemaker/build/$1"
     }
-  ]
-}
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+
+
