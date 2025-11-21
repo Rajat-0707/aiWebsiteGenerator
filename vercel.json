@@ -9,7 +9,7 @@
       "src": "aiwebsitemaker/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist"
+        "distDir": "build"
       }
     }
   ],
@@ -20,7 +20,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "aiwebsitemaker/dist/$1"
+      "dest": "aiwebsitemaker/build/$1"
     }
   ]
 }

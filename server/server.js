@@ -1,4 +1,3 @@
-
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
@@ -113,9 +112,9 @@ Output:
 
     return res.json({ html, downloadUrl });
   } catch (err) {
-    console.error("🔥 BACKEND ERROR:", err);
+    console.error(" BACKEND ERROR:", err);
     res.status(500).json({ error: err.message || "Internal Server Error" });
   }
 });
 
-module.exports = app;
+export default app;

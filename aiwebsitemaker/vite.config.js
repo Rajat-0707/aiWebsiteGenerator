@@ -3,5 +3,8 @@ export default {
     proxy: {
       "/api": "http://localhost:5000"
     }
+  },
+  build: {
+    outDir: "build"
   }
 };
