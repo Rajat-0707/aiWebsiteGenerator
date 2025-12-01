@@ -459,6 +459,12 @@ const handleDarkClick = () => {
                 <option value="formal">Formal</option>
                 <option value="bold">Bold</option>
               </select>
+              <label className="label">AI model</label>
+              <select className="input" value={spec.model} onChange={(e) => setSpec({ ...spec, model: e.target.value })}>
+                <option value="gemini">Gemini</option>
+                <option value="chatgpt">ChatGPT</option>
+                <option value="claude">Claude</option>
+              </select>
             </div>
             <div>
               <label className="label">Include features</label>
@@ -531,7 +537,7 @@ const handleDarkClick = () => {
         <section className="workspace">
           <div className="preview-toolbar">
             <h2 className="h2">Live preview</h2>
-            <span className="muted">Provider: {spec.provider.toUpperCase()}</span>
+            <span className="muted">{spec.model}</span>
           </div>
 
           {downloadUrl && (
