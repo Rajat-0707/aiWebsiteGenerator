@@ -270,7 +270,8 @@ const handleDarkClick = () => {
 
     setBusy(true);
       try {
-      const res = await axios.post("/api/generate", { spec }, { validateStatus: () => true });
+      const apiUrl = import.meta.env.VITE_API_URL || "/api/generate";
+      const res = await axios.post(`${apiUrl}/api/generate`, { spec }, { validateStatus: () => true });
 
       if (res.status >= 200 && res.status < 300 && res.data?.html) {
         const html = String(res.data.html);
