@@ -93,9 +93,6 @@ The project includes a `netlify.toml`, meaning it can be deployed on Netlify (or
 2. Link the repo in Netlify and set build commands / publish directory appropriately (e.g. build front-end, serve server).  
 3. Configure any environment variables (if needed) and publish.  
 
-_(Modify instructions according to your actual deployment setup.)_
-
----
 
 ## 🤝 Contributing
 
@@ -117,11 +114,6 @@ Please make sure your code adheres to existing style conventions (if any) and in
 - Improve generator flexibility (e.g. choice between static site vs. dynamic server site)  
 - Add tests and CI/CD integration  
 
----
-
-## 📄 License
-
-Distributed under the MIT License. *(Or change according to your chosen license)*
 
 ---
 
@@ -133,8 +125,9 @@ A good README helps users — and future you — understand what the project doe
 
 ## 🙋 Author
 
-**Rajat** — initial author & maintainer. (That’s you!)  
+**Rajat** — initial author & maintainer. 
 
 Feel free to open issues or pull requests if you discover bugs, have feature ideas, or want to improve documentation.
+
 
 
