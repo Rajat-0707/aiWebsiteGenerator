@@ -635,7 +635,7 @@ function EmptyState({ onGenerate }) {
   return (
     <div className="empty">
       <h3>Describe your website and click Generate</h3>
-      <p className="muted">Pick a provider (Gemini/ChatGPT), choose pages, and set a tone. The preview will appear here.</p>
+      <p className="muted"></p>
       <button className="btn primary" onClick={onGenerate}>Generate</button>
     </div>
   );
