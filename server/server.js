@@ -18,11 +18,7 @@ process.exit(1);
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 
 const stripFences = (s = "") =>
-s
-.trim()
-.replace(/^(?:html)?\s*/i, "")   .replace(/$/i, "")
-.replace(/(?:html)?/gi, "")   .replace(//g, "")
-.trim();
+s.trim().replace(/^(?:html)?\s*/i, "").replace(/$/i, "").replace(/(?:html)?/gi, "")  .replace(//g, "").trim();
 
 const ensureFullDoc = (html = "", spec = {}) => {
 const hasHtml = /<\s*html[\s>]/i.test(html) || /<!doctype html>/i.test(html);
