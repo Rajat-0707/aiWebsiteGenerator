@@ -111,7 +111,7 @@ Return ONLY the final HTML string for a complete document (<!doctype html> ... <
         let lastErr;
         const tried = [];
 
-        const modelIds = ["gemini-2.0-flash-exp", "gemini-2.0-flash", "gemini-1.5-flash"];
+        const modelIds = ["gemini-3-flash"];
 
         for (const id of modelIds) {
             try {
