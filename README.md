@@ -17,9 +17,8 @@
 ```
 /
 ├── aiwebsitemaker/      ← Front-end / generator engine  
-├── server/              ← Back-end server (optional)  
-├── .gitignore
-├── netlify.toml         ← (If using Netlify for deployment)  
+├── server/              ← Back-end server   
+├── .gitignore  
 └── README.md            ← This file  
 ```
 
@@ -128,6 +127,7 @@ A good README helps users — and future you — understand what the project doe
 **Rajat** — initial author & maintainer. 
 
 Feel free to open issues or pull requests if you discover bugs, have feature ideas, or want to improve documentation.
+
 
 
 
