@@ -466,9 +466,7 @@ const res = await axios.post(`${apiUrl}/api/generate`,
               </select>
               <label className="label">AI model</label>
               <select className="input" value={spec.model} onChange={(e) => setSpec({ ...spec, model: e.target.value })}>
-                <option value="gemini">Gemini</option>
                 <option value="chatgpt">ChatGPT</option>
-                <option value="claude">Claude</option>
               </select>
             </div>
             <div>
