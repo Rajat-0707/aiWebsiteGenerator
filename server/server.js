@@ -154,7 +154,7 @@ Return ONLY the final HTML string for a complete document (<!doctype html> ... <
     const tried = [];
 
     const modelIds = [
-      "openai/gpt-4o-mini",
+      "x-ai/grok-code-fast-1",
       "openai/gpt-4o",
       "anthropic/claude-3.5-sonnet",
       "deepseek/deepseek-chat",
