@@ -74,7 +74,7 @@ async function callOpenRouter({ model, prompt }) {
         },
       ],
       temperature: 0.4,
-      max_tokens: 4000,
+      max_tokens: 2500,
     }),
   });
 
@@ -154,10 +154,9 @@ Return ONLY the final HTML string for a complete document (<!doctype html> ... <
     const tried = [];
 
     const modelIds = [
-      "x-ai/grok-code-fast-1",
-      "openai/gpt-4o",
-      "anthropic/claude-3.5-sonnet",
-      "deepseek/deepseek-chat",
+      "mistralai/devstral-2512:free",
+      "nvidia/nemotron-3-nano-30b-a3b:free",
+      "nex-agi/deepseek-v3.1-nex-n1:free",
     ];
 
     for (const model of modelIds) {
