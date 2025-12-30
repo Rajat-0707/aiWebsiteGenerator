@@ -135,11 +135,39 @@ app.post("/api/generate", async (req, res) => {
       pages: Array.isArray(spec.pages) ? spec.pages : [],
     };
 
-    const prompt = `
-You are a senior frontend engineer and UX designer. Generate a production-quality, fully responsive, single-file website.
+   const prompt = `
+You are a senior frontend engineer and UX designer.
 
-Return ONLY valid HTML.
+Generate a production-quality, fully responsive, single-file website.
+
+Rules:
+- Return ONLY valid HTML
+- ONE complete HTML document
+- Inline or internal CSS only
+- Vanilla JavaScript only
+
+Context:
+Project Name: ${safe.projectName}
+
+Brief:
+${safe.brief}
+
+Pages:
+${safe.pages.join(", ")}
+
+Primary Color:
+${safe.primaryColor}
+
+Tone:
+${safe.tone}
+
+Style:
+${safe.style}
+
+Output:
+Return ONLY the final HTML document.
 `;
+
 
     let html = "";
     let lastErr;
