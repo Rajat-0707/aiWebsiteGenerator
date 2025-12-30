@@ -12,6 +12,9 @@ const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:3000",
   "https://ai-website-generator-7od2ogz0h-rajat-0707s-projects.vercel.app",
+  "https://ai-website-generator-liard.vercel.app/",
+  "https://ai-website-generator-git-main-rajat-0707s-projects.vercel.app/",
+  "https://ai-website-generator-bsqll1xgo-rajat-0707s-projects.vercel.app/"
 ];
 
 app.use(
