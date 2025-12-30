@@ -17,7 +17,6 @@ const allowedOrigins = [
 app.use(
   cors({
     origin: function (origin, callback) {
-      // allow server-to-server / curl
       if (!origin) return callback(null, true);
 
       if (allowedOrigins.includes(origin)) {
@@ -31,8 +30,7 @@ app.use(
   })
 );
 
-app.options("*", cors());
-
+app.options("/api/*", cors());
 
 
 app.use(express.json({ limit: "1mb" }));
