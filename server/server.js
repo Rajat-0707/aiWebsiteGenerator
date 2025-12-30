@@ -99,7 +99,7 @@ async function callOpenRouter({ model, prompt }) {
       model,
       messages: [{ role: "user", content: prompt }],
       temperature: 0.4,
-      max_tokens: 2500,
+      max_tokens: 5500,
     }),
   });
 
